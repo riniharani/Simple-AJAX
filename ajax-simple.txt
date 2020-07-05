@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Index</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />    <link href="assets/css/style.css" rel="stylesheet" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="stylesheets/jquery.validate.css"/>
+<link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
+
+       
+</head>
+<body>   
+    <div class="navbar navbar-inverse navbar-fixed-top">
+       <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                 <a class="navbar-brand" href="#">Faraid</a>
+            </div>
+           
+        </div>
+    </div>
+  
+</head>
+
+
+<?php
+
+// get the q parameter from URL
+$q = $_REQUEST["q"];
+
+// lookup all hints from array if $q is different from "" 
+if ($q == "Terengganu") 
+	{   ?>
+
+		<style type="text/css">
+			select {
+			width: 70%;
+			padding: 10px 10px;<!--utk drop down-->
+			border: none;
+			border-radius: 4px;
+			background-color: #EDF6F5;
+		}
+		input[type=text]:focus 
+		{
+		background-color: lightblue;
+		}
+		</style>
+		<div align="center"></align>   
+		  
+		<table>
+		<table align="center">
+
+		<?php echo "<b>".$q."</b>"; ?><br>
+		
+		<tr>
+				<option value="">Please select: City</option>
+				<option value="" disabled>City</option>
+				<option value="Dungun"><b> Dungun </b> </option>
+				<option value="Kuala Terengganu"><b> Kuala Terengganu</b> </option>
+				<option value="Kemaman"><b> Kemaman</b> </option>
+		</tr>
+ <?php
+	}
+	else if($q=="husband")
+		{
+			echo "<tr><td><b>".$q."</b></td>"; ?>
+			<tr>
+						
+						<option value="wife"><b>wife</b> </option>
+						
+			</tr>
+			</tr>
+		<?php
+		}
+		else if($q=="wife")
+		{
+			echo "<tr><td><b>".$q."</b></td>"; ?>
+			<tr>
+						
+						<option value="husband"><b>Husband</b> </option>
+						
+			</tr>
+			</tr>
+			<?php
+		}
+		else if($q=="Sabah")
+		{
+			echo "<tr><td><b>".$q."</b></td>"; ?>
+			<tr>
+						<option value="">Please select: City</option>
+						<option value="Kundasang"><b>Kundasang</b> </option>
+						<option value="Kota Kinabalu"><b>Kota Kinabalu</b> </option>
+						<option value="Tawau"><b>Tawau</b> </option>
+			</tr>
+			</tr>
+		<?php 
+		} 
+		else if($q=="Pahang")
+		{
+			echo "<tr><td><b>".$q."</b></td>"; ?>
+			<tr>
+						<option value="">Please select: City</option>
+						<option value="Kuantan"><b>Kuantan</b> </option>
+						<option value="Temerloh"><b>Temerloh</b> </option>
+						<option value="Kuala Lipis"><b>Kuala Lipis</b> </option>
+			</tr>
+			</tr>
+		<?php 
+		} 
+		else if($q=="Johor")
+		{
+			echo "<tr><td><b>".$q."</b></td>"; ?>
+			<tr>
+						<option value="">Please select: City</option>
+						<option value="Johor Bharu"><b>Johor Bharu</b> </option>
+						<option value="Kota Tinggi"><b>Kota Tinggi</b> </option>
+						<option value="Segamat"><b>Segamat</b> </option>
+			</tr>
+			</tr>
+		<?php 
+		} 
+		else if($q=="Kedah")
+		{
+			echo "<tr><td><b>".$q."</b></td>"; ?>
+			<tr>
+						<option value="">Please select: City</option>
+						<option value="Langkawi"><b>Langkawi</b> </option>
+						<option value="Alor Setar"><b>Alor Setar</b> </option>
+						<option value="Jitra"><b>Jitra</b> </option>
+			</tr>
+			</tr>
+		<?php 
+		} 
+		else if($q=="Selangor")
+		{
+			echo "<tr><td><b>".$q."</b></td>"; ?>
+			<tr>
+						<option value="">Please select: City</option>
+						<option value="Shah Alam"><b>Shah Alam</b> </option>
+						<option value="Cyberjaya"><b>Cyberjaya</b> </option>
+						<option value="Subang Jaya"><b>Subang Jaya</b> </option>
+			</tr>
+			</tr>
+		<?php 
+		} 
+		else if($q=="Pulau Pinang")
+		{
+			echo "<tr><td><b>".$q."</b></td>"; ?>
+			<tr>
+						<option value="">Please select: City</option>
+						<option value="Georgetown"><b>Georgetown</b> </option>
+						<option value="Batu Feringgi"><b>Batu Feringgi</b> </option>
+						<option value="Butterworth"><b>Butterworth</b> </option>
+			</tr>
+			</tr>
+		<?php 
+		} 
+		else if($q=="Kuala Lumpur")
+		{
+			echo "<tr><td><b>".$q."</b></td>"; ?>
+			<tr>
+						<option value="">Please select: City</option>
+						<option value="Bukit Bintang"><b>Bukit Bintang</b> </option>
+						<option value="Ampang"><b>Ampang</b> </option>
+						<option value="Wangsa Maju"><b>Wangsa Maju</b> </option>
+			</tr>
+			</tr>
+		<?php 
+		} 
+/* else
+	{
+
+</tr>
+</form>
+
+<?php 
+	} */
+?>
+  </div>
+</div>
+
+
+</body>
+</html>
